@@ -17,7 +17,7 @@ const initialState={tasks:[
           tasks:[...state.tasks,{
             task:action.payload,
             done:false,
-            id:Math.random()
+            id:Math.random().toString()
           }]
         }
         case DELETE_TASK:
