@@ -5,7 +5,7 @@ import { useSelector,useDispatch} from 'react-redux';
 import { deleteTask,didTask } from '../store/taskAction';
 
 
-const About = () => {
+const About = ({navigation}) => {
   const dispatch=useDispatch()
   const tasks=useSelector(state=>state.tasks)
   const tasksDone=tasks.filter(item=>item.done===true)
